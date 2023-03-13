@@ -38,8 +38,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Documentation
-
-Taslent Front-end
+```bash
+Taslent_Front-end
     ├── public
     │   ├── logo.png
     │   ├── favicon.png
@@ -75,3 +75,4 @@ Taslent Front-end
     ├── package-lock.json
     ├── package.json
     └── README.md
+```
