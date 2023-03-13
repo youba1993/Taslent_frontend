@@ -47,9 +47,9 @@ Taslent_Front-end
     │   ├── manifest.json
     │   └── robots.txt
     ├── src
-    |   ├── Redux
-    |   |   ├── Features
-    |   |   └── Store
+    │   ├── Redux
+    │   │   ├── Features
+    │   │   └── Store
     │   ├── assets
     │   │   └── images
     │   ├── components
@@ -59,16 +59,16 @@ Taslent_Front-end
     │   │   └── Donation
     │   ├── pages
     │   │   ├── Home
-    |   |   ├── About
-    |   |   ├── Projects
-    |   |   ├── Blogs
-    |   |   ├── Q&A
-    |   |   ├── Login
-    |   |   ├── Signup
+    │   │   ├── About
+    │   │   ├── Projects
+    │   │   ├── Blogs
+    │   │   ├── QA
+    │   │   ├── Login
+    │   │   ├── Signup
     │   │   └── Gallery
     │   ├── App.js
-    |   ├── App.test.js
-    |   ├── index.css
+    │   ├── App.test.js
+    │   ├── index.css
     │   ├── index.js
     │   ├── reportWebVitals.js
     │   └── setupTests.js
