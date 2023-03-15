@@ -13,7 +13,7 @@ function Header() {
             <Container className='justify-content-center' >
                 
                 <Navbar.Collapse id="basic-navbar-nav ">
-                    <Nav className="ml-auto" width="50%">
+                    <Nav className="ml-auto" >
                         <Nav.Link href="#home">About</Nav.Link>
                         <Nav.Link href="#link">Projects</Nav.Link>
                         <Nav.Link href="#home">Links</Nav.Link>
@@ -33,7 +33,7 @@ function Header() {
                     </Navbar.Brand>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#home">Login</Nav.Link>
+                    <Nav.Link href="#home" style={{ fontWeight: 'bold' }}>Login</Nav.Link>
                 </Nav>
 
             </Container>

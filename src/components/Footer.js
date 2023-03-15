@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { SlSocialFacebook, SlSocialTwitter, SlSocialGoogle, SlSocialLinkedin, SlSocialGithub } from "react-icons/sl";
 const Footer = () => {
   return (
-    <Container bg='light' className='text-center text-lg-start text-muted'>
+    <Container bg='light' className='text-center text-lg-start text-muted '>
 
 
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
