@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import NotFound from "./NotFound";
-import UnderConstruction from "./UnderConstruction";
+
 
 
 const Home = () => {
@@ -9,8 +8,7 @@ const Home = () => {
         <div>
            
                 <Header />
-                <UnderConstruction />
-                <NotFound />
+                
 
            
                 <Footer />

@@ -9,11 +9,11 @@ import logo from "../images/logo-no-background.png"
 
 function Header() {
     return (
-        <Navbar bg="light" expand="lg" sticky="top">
-            <Container>
+        <Navbar collapseOnSelect bg="light" expand="lg" sticky="top">
+            <Container className='justify-content-center' >
                 
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
+                <Navbar.Collapse id="basic-navbar-nav ">
+                    <Nav className="ml-auto" width="50%">
                         <Nav.Link href="#home">About</Nav.Link>
                         <Nav.Link href="#link">Projects</Nav.Link>
                         <Nav.Link href="#home">Links</Nav.Link>
@@ -27,7 +27,7 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Nav className="mx-auto justify-content-center">
+                <Nav className="mx-auto col-6">
                     <Navbar.Brand href="#home" >
                         <img className="d-inline-block align-top" height={60} alt="My Village Logo" src={logo} />
                     </Navbar.Brand>
