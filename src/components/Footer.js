@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import { SlSocialFacebook, SlSocialTwitter, SlSocialGoogle, SlSocialLinkedin, SlSocialInstagram, SlSocialGithub } from "react-icons/sl";
+import { SlSocialFacebook, SlSocialTwitter, SlSocialGoogle, SlSocialLinkedin, SlSocialGithub } from "react-icons/sl";
 const Footer = () => {
   return (
     <Container bg='light' className='text-center text-lg-start text-muted'>
