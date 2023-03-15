@@ -1,5 +1,4 @@
 import {
-    Figure,
     Container,
     Nav,
     Navbar,
