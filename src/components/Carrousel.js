@@ -12,7 +12,7 @@ function CarouselPage() {
         />
         <Carousel.Caption>
           <h3>Ansuf Yiswen</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
       
