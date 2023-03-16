@@ -2,8 +2,8 @@ import { Container } from "react-bootstrap";
 import { SlSocialFacebook, SlSocialTwitter, SlSocialGoogle, SlSocialLinkedin, SlSocialGithub } from "react-icons/sl";
 const Footer = () => {
   return (
-    <Container bg='light' className='text-center text-lg-start text-muted '>
-
+   
+    <Container bg='light' className='text-center text-lg-start text-muted ' sticky="bottom">
 
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className='me-5 d-none d-lg-block'>
@@ -31,6 +31,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Copyright:{' '} Village Taslent
       </div>
     </Container>
+    
   );
 }
 

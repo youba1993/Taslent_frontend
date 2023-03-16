@@ -1,3 +1,4 @@
+import CarouselPage from "../components/Carrousel";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -8,7 +9,7 @@ const Home = () => {
         <div>
            
                 <Header />
-                
+                <CarouselPage />
 
            
                 <Footer />
