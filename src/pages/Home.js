@@ -12,8 +12,8 @@ const Home = () => {
 
             <Header />
             <CarouselPage />
-            <Container className="m-5" >
-                <Row className='bg-light text-center me-auto'>
+            <Container className="mt-5 mb-5" >
+                <Row className='bg-light text-center '>
                     <Col>
                         <h3 >Unity</h3>
                     </Col>
