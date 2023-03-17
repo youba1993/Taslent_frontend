@@ -9,7 +9,10 @@ const Home = () => {
         <div>
            
                 <Header />
+               
                 <CarouselPage />
+         
+                
 
            
                 <Footer />
