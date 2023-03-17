@@ -15,7 +15,7 @@ function CarouselPage() {
         />
         </Container>
         <Carousel.Caption>
-          <h3>Ansuf Yiswen</h3>
+          <h3 className='text-warning'>Ansuf Yiswen</h3>
           
         </Carousel.Caption>
       </Carousel.Item>

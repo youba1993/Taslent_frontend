@@ -10,3 +10,13 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-family: "Ubuntu";
+  font-weight: bold ;
+  font-style: italic;
+
+}
+
+blockquote, figcaption {
+  font-family: monospace;
+}
