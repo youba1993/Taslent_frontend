@@ -3,7 +3,7 @@ import CarouselPage from "../components/Carrousel";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { taslentUrl } from "../images/ImageUrl";
-import Contact from "./Contact";
+
 
 const Home = () => {
     const { unite, respect, knowledge } = taslentUrl.homePage
