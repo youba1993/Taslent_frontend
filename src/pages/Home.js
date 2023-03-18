@@ -3,6 +3,7 @@ import CarouselPage from "../components/Carrousel";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { taslentUrl } from "../images/ImageUrl";
+import Contact from "./Contact";
 
 const Home = () => {
     const {unite, respect, knowledge} = taslentUrl.homePage
@@ -13,7 +14,7 @@ const Home = () => {
             <CarouselPage />
             <Container className="mt-5 mb-5" >
                 <Row className='bg-light text-left '>
-                    <Col >
+                    <Col  className="col-sm-4" >
                         <figure className="mt-3" >
                             <img className="img-thumbnail" src={unite} alt="unity" />
                             <h1 className="mt-2 text-success " >Unity</h1>
@@ -24,8 +25,9 @@ const Home = () => {
                                 Henry Ford
                             </figcaption>
                         </figure>
+                        <hr className="d-sm-none"></hr>
                     </Col>
-                    <Col>
+                    <Col className="col-sm-4">
                         <figure className="mt-3">
                             <img className="img-thumbnail" src={knowledge} alt="unity" />
                             <h1 className="mt-2 text-danger">knowledge</h1>
@@ -36,8 +38,9 @@ const Home = () => {
                                 Malcolm X
                             </figcaption>
                         </figure>
+                        <hr className="d-sm-none"></hr>
                     </Col>
-                    <Col>
+                    <Col className="col-sm-4">
                         <figure className="mt-3">
                             <img className="img-thumbnail" src={respect} alt="unity" />
                             <h1 className="mt-2 text-primary">Respect</h1>
@@ -48,11 +51,12 @@ const Home = () => {
                                 Hussein Nishah
                             </figcaption>
                         </figure>
+                        <hr className="d-sm-none"></hr>
                     </Col>
                 </Row>
             </Container>
 
-
+            <Contact />
 
             <Footer />
 

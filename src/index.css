@@ -20,3 +20,8 @@ h1 {
 blockquote, figcaption {
   font-family: monospace;
 }
+
+iframe {
+   width: 600px;
+  height: 450px   
+}

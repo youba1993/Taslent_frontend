@@ -1,6 +1,8 @@
 export const taslentUrl = {
     carroussel: {
-        villageTaslent: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Village-taslent_jl9Q80dpl.png?updatedAt=1679107386233",
+        villageTaslent: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Carrousel1_ZGIwORONi?updatedAt=1679112549803",
+        villageTaslent1: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Carrousel2_VCB1aYmw0?updatedAt=1679112586801",
+        villageTaslent2: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Carrousel3_7t2E3diBij?updatedAt=1679112639112"
     },
     homePage: {
         respect: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Respect_Z9aLMXQrV.png?updatedAt=1679107387083",
