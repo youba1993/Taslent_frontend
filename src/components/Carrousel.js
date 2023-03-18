@@ -1,8 +1,9 @@
 import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import village from '../images/Village-taslent.png';
+import { taslentUrl } from '../images/ImageUrl';
 
 function CarouselPage() {
+  const {villageTaslent} = taslentUrl.carroussel
   return (
     
     <Carousel fade >
@@ -10,7 +11,7 @@ function CarouselPage() {
         <Container >
         <img
           className="d-block w-100 "
-          src={village}
+          src={villageTaslent}
           alt="First slide"
         />
         </Container>
