@@ -86,8 +86,6 @@ const Home = () => {
                 </article>
             </Container>
 
-            <Contact />
-
             <Footer />
 
         </div>
