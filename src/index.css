@@ -17,11 +17,11 @@ h1 {
 
 }
 
-blockquote, figcaption {
+blockquote, figcaption, p {
   font-family: monospace;
 }
 
-iframe {
-   width: 600px;
-  height: 450px   
+
+#history p {
+  text-indent: 50px;
 }
