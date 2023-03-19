@@ -57,8 +57,8 @@ const Home = () => {
             </Container>
 
      
-            <Container className=" background-image  my-3 py-4">
-                <article className="text-left text-white mt-3" id="history">
+            <Container className="bg-light my-3 py-4">
+                <article className="text-left mt-3" id="history">
                     <h1>History :</h1>
                     <Row>
                         <Col className="col-sm-6">
