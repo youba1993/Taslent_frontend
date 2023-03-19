@@ -6,9 +6,9 @@ function CarouselPage() {
   const { villageTaslent, villageTaslent1, villageTaslent2 } = taslentUrl.carroussel
   return (
 
-    <Carousel fade interval={2500} >
+    <Carousel  fade interval={2500} className='text-white' >
       <Carousel.Item>
-        <Container >
+        <Container>
           <img
             className="d-block w-100 "
             src={villageTaslent}
@@ -16,7 +16,7 @@ function CarouselPage() {
           />
         </Container>
         <Carousel.Caption>
-          <h3 className='text-warning'>Ansuf Yiswen</h3>
+        <h2>Ansuf Yiswen</h2>
 
         </Carousel.Caption>
       </Carousel.Item>
@@ -30,7 +30,7 @@ function CarouselPage() {
           />
         </Container>
         <Carousel.Caption>
-          <h3 className='text-warning'>Welcome</h3>
+          <h2>Ansuf Yiswen</h2>
 
         </Carousel.Caption>
       </Carousel.Item>
@@ -44,7 +44,7 @@ function CarouselPage() {
           />
         </Container>
         <Carousel.Caption>
-          <h3 className='text-warning'>Bienvenue</h3>
+        <h2>Ansuf Yiswen</h2>
 
         </Carousel.Caption>
       </Carousel.Item>

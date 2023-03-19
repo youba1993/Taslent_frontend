@@ -3,9 +3,7 @@ body {
 }
 
 .sticky-footer {
-
-  position: relative;
-  
+  position: relative; 
   bottom: 0;
   width: 100%;
 }
@@ -19,9 +17,17 @@ h1 {
 
 blockquote, figcaption, p {
   font-family: monospace;
+  font-size: x-large;
 }
 
 
 #history p {
   text-indent: 50px;
+}
+
+.background-image {
+  background-image: url('https://ik.imagekit.io/nvnw6o7ew/Taslent/olive_-KgnwCHxG?updatedAt=1679204242151');
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
 }

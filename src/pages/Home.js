@@ -12,7 +12,7 @@ const Home = () => {
 
             <Header />
             <CarouselPage />
-            <Container className="my-5" >
+            <Container className="my-3 py-4" >
                 <Row className='bg-light text-left'>
                     <Col className="col-sm-4" >
                         <figure className="mt-3" >
@@ -56,8 +56,9 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Container className="bg-light mt-5 mb-5">
-                <article className="p-5" id="history">
+     
+            <Container className=" background-image  my-3 py-4">
+                <article className="text-left text-white mt-3" id="history">
                     <h1>History :</h1>
                     <Row>
                         <Col className="col-sm-6">
@@ -85,6 +86,7 @@ const Home = () => {
                     </Row>
                 </article>
             </Container>
+         
 
             <Footer />
 
