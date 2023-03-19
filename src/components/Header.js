@@ -14,7 +14,7 @@ function Header() {
                 
                 <Navbar.Collapse id="basic-navbar-nav ">
                     <Nav className="ml-auto" >
-                        <Nav.Link href="#home">About</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
                         <Nav.Link href="#link">Projects</Nav.Link>
                         <Nav.Link href="#home">Links</Nav.Link>
                         <NavDropdown title="Activity" id="basic-nav-dropdown">
@@ -28,7 +28,7 @@ function Header() {
                 </Navbar.Collapse>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="mx-auto col-6">
-                    <Navbar.Brand href="#home" >
+                    <Navbar.Brand href="/" >
                         <img className="d-inline-block align-top" height={60} alt="My Village Logo" src={logo} />
                     </Navbar.Brand>
                 </Nav>
