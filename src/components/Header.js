@@ -10,11 +10,11 @@ import logo from "../images/logo-no-background.png"
 function Header() {
     return (
         <Navbar collapseOnSelect bg="light" expand="lg" sticky="top">
-            <Container className='justify-content-center' >
+            <Container className='justify-content-center' id='header' >
                 
-                <Navbar.Collapse id="basic-navbar-nav ">
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" >
-                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link className=' me-3' href="/about">About Taslent</Nav.Link>
                         <Nav.Link href="#link">Projects</Nav.Link>
                         <Nav.Link href="#home">Links</Nav.Link>
                         <NavDropdown title="Activity" id="basic-nav-dropdown">

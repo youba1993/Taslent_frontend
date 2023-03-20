@@ -6,21 +6,21 @@ const About = () => {
         <div>
             <Container>
                 <Row>
-                    <Col className="col-sm-4">
-                        <Nav className="nav-pills flex-column position-fixed "  id='aboutNav'>
+                   
+                        <Nav className="ml-auto" id="basic-navbar-nav" >
                             <Nav.Item>
-                                <Nav.Link className="active my-2 " href='#history' >History</Nav.Link>
+                                <Nav.Link className="active " href='#history' type="button" >History</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                            <Nav.Link className="active my-2"  href='#villageRules' >Village Rules</Nav.Link>
+                            <Nav.Link className="active"  href='#villageRules' >Village Rules</Nav.Link>
                             </Nav.Item>
                         </Nav>
-                    </Col>
-                    <Col className="col-sm-8">
-                        <Container className="bg-light my-3 py-4">
+                
+                    <Col>
+                        <Container className="py-4">
                             <article className="text-left mt-3" id="history">
-                                <h1>History :</h1>
-                                <Row>
+                                <h1 style={{fontWeight: "bold"}}>History </h1>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-6">
                                         <p>Taslent g’Illoulen is a village located 7 km from Akbou and situated on the west bank of the Soummam river in the foothills of the Djurdjura mountain range. It stands at an altitude of over 700 meters and is surrounded by the villages of El Mechta and Ath-Sellam to the west, Iamouren, Tighilt, and Ath-Ammar-Ouzeggan to the north, Tazaghart to the east, and Ighram to the south. Formerly known as Aguni n’Teslent, it takes its name from a century-old tree, the ash tree (aslen, taslent), which is widespread in its territory. </p>
 
@@ -44,10 +44,10 @@ const About = () => {
                                 </Row>
                             </article>
                         </Container>
-                        <Container className="bg-light my-3 py-4">
+                        <Container className="py-4">
                             <article className="text-left mt-3" id="villageRules">
-                                <h1>Village Rules :</h1>
-                                <Row>
+                                <h1 style={{fontWeight: "bold"}}>Village Rules </h1>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-6">
                                        <p>Rule-1 :</p>
                                     </Col>

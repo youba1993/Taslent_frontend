@@ -32,6 +32,7 @@ blockquote, figcaption, p {
   height: 85vh;
 }
 
-#aboutNav .nav-link {
-  background-color: rgb(119, 149, 149);
+#header #basic-navbar-nav .nav-link {
+  font-weight: bold;
+  color: brown;
 }
