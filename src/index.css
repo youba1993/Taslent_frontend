@@ -36,3 +36,7 @@ blockquote, figcaption, p {
   font-weight: bold;
   color: brown;
 }
+h4, h5 {
+  font-style: italic;
+  text-decoration-line: underline;
+}
