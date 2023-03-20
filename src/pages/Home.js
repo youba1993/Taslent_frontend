@@ -1,7 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import CarouselPage from "../components/Carrousel";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import { taslentUrl } from "../images/ImageUrl";
 
 
@@ -11,7 +9,7 @@ const Home = () => {
     return (
         <div>
 
-            <Header />
+            
             <CarouselPage />
             <Container className="my-3 py-4" >
                 <Row className='bg-light text-left row-cols-1'>
@@ -57,7 +55,7 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Footer />
+            
 
         </div>
     );

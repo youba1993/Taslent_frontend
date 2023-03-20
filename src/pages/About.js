@@ -1,20 +1,18 @@
 import { Col, Container, Nav, Row } from "react-bootstrap";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+
 
 const About = () => {
     return (
         <div>
-            <Header />
             <Container>
                 <Row>
                     <Col className="col-sm-4">
-                        <Nav className="nav-pills flex-column position-fixed" id='aboutNav'>
+                        <Nav className="nav-pills flex-column position-fixed "  id='aboutNav'>
                             <Nav.Item>
-                                <Nav.Link className="active my-2" href='#history' >History</Nav.Link>
+                                <Nav.Link className="active my-2 " href='#history' >History</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                            <Nav.Link className="active my-2" href='#villageRules' >Village Rules</Nav.Link>
+                            <Nav.Link className="active my-2"  href='#villageRules' >Village Rules</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Col>
@@ -62,7 +60,6 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
-            <Footer />
         </div>
     );
 }
