@@ -14,7 +14,7 @@ const Home = () => {
             <Header />
             <CarouselPage />
             <Container className="my-3 py-4" >
-                <Row className='bg-light text-left'>
+                <Row className='bg-light text-left row-cols-1'>
                     <Col className="col-sm-4" >
                         <figure className="mt-3" >
                             <img className="img-thumbnail" src={unite} alt="unity" />

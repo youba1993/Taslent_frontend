@@ -31,3 +31,7 @@ blockquote, figcaption, p {
   background-position: center;
   height: 85vh;
 }
+
+#aboutNav .nav-link {
+  background-color: rgb(119, 149, 149);
+}
