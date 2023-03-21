@@ -1,4 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import { taslentUrl } from "../images/ImageUrl";
 
@@ -12,9 +13,9 @@ const Home = () => {
                 <h1 className=" p-2 size-lg" style={{fontSize: "65px"}}>Ansuf Yiswen</h1>
                 <h3>Taslent</h3>
                 <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
-                <Button variant="outline-light" style={{fontWeight: "bold"}}>Learn more</Button>
+                <Link to={"/about"}><Button variant="outline-light" style={{fontWeight: "bold"}}>Learn more</Button></Link>
                 <hr></hr>
-                <Button  variant="outline-info" style={{fontWeight: "bold"}} >Donate</Button>
+                <Link to={"/underConstruction"} ><Button  variant="outline-info" style={{fontWeight: "bold"}} >Donate</Button></Link>
             </div>
 
             <Container className="my-3 py-4" >

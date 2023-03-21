@@ -11,7 +11,7 @@ export const taslentUrl = {
         knowledge: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Knowledge_6S4aSJ2VN.png?updatedAt=1679286960609",
         unite: "https://ik.imagekit.io/nvnw6o7ew/Taslent/Unite_CJx5vAwCRG.png?updatedAt=1679107388111",
     },
-    PageUnderConstruction: "https://ik.imagekit.io/nvnw6o7ew/Taslent/under-construction_MOmqWSYKu.png?updatedAt=1679107382595",
+    pageUnderConstruction: "https://ik.imagekit.io/nvnw6o7ew/Taslent/under-construction_MOmqWSYKu.png?updatedAt=1679107382595",
     placesToVisit: {
         stadium: "https://ik.imagekit.io/nvnw6o7ew/Taslent/carrousel6_IfcGAY-Yr?updatedAt=1679203036366",
         river: "https://ik.imagekit.io/nvnw6o7ew/Taslent/river_tpIblbUVx?updatedAt=1679203922343"

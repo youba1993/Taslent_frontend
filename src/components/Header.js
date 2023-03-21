@@ -15,12 +15,12 @@ function Header() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" >
                         <Nav.Link className=' me-3' href="/about">About Taslent</Nav.Link>
-                        <Nav.Link href="#link">Projects</Nav.Link>
-                        <Nav.Link href="#home">Links</Nav.Link>
+                        <Nav.Link href="/projects">Projects</Nav.Link>
+                        <Nav.Link href="/gallery">Gallery</Nav.Link>
                         <NavDropdown title="Activity" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Q&A</NavDropdown.Item>
-                            <NavDropdown.Item href="/gallery">Gallery</NavDropdown.Item>
+                            <NavDropdown.Item href="/links">Links</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Contacts</NavDropdown.Item>
                         </NavDropdown>
