@@ -1,9 +1,11 @@
 import { Col, Container, Nav, Row } from "react-bootstrap";
 
 
+
 const About = () => {
     return (
         <div>
+             
             <Container>
                 <Row>
 
@@ -195,7 +197,7 @@ const About = () => {
                                     </Row>
                                     <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
-                                        <h4>CONCLUSION</h4>
+                                        <h4>CONCLUSION:</h4>
                                     </Col>
                                     <Col className="col-sm-8">
                                         <p>“ The myth works in societies like the dream in the individual. Like him, he has the elements of the past, he transmits them but at the same time, he arranges them according to the present. When a trauma occurs, the myth, like the dream, never ceases to represent it, until its inscription in history is possible, until its content can be named, become a memory of the Kabyle myth, which functions as a true myth: it designates an origin and a corpus of values, it permeates the unconscious and the conscious, it circulates in memory and in language. It establishes the vital dynamism of a society.“</p>

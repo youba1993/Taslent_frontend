@@ -3,19 +3,21 @@ body {
 }
 
 .sticky-footer {
-  position: relative; 
+  position: relative;
   bottom: 0;
   width: 100%;
 }
 
 h1 {
   font-family: "Ubuntu";
-  font-weight: bold ;
+  font-weight: bold;
   font-style: italic;
 
 }
 
-blockquote, figcaption, p {
+blockquote,
+figcaption,
+p {
   font-family: monospace;
   font-size: x-large;
 }
@@ -26,17 +28,23 @@ blockquote, figcaption, p {
 }
 
 .background-image {
-  background-image: url('https://ik.imagekit.io/nvnw6o7ew/Taslent/olive_-KgnwCHxG?updatedAt=1679204242151');
+  background-image: url('https://ik.imagekit.io/nvnw6o7ew/Taslent/taslent-background_MoL6gOpqw.jpg?updatedAt=1679200829062');
+  width: 100vw;
+  height: 65vh; 
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 85vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #957a7ab7;
 }
 
 #header #basic-navbar-nav .nav-link {
   font-weight: bold;
   color: brown;
 }
-h4, h5 {
+
+h4,
+h5 {
   font-style: italic;
   text-decoration-line: underline;
 }

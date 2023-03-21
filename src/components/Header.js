@@ -20,7 +20,7 @@ function Header() {
                         <NavDropdown title="Activity" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Q&A</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Gallery</NavDropdown.Item>
+                            <NavDropdown.Item href="/gallery">Gallery</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Contacts</NavDropdown.Item>
                         </NavDropdown>

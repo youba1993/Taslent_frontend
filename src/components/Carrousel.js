@@ -16,7 +16,7 @@ function CarouselPage() {
           />
         </Container>
         <Carousel.Caption>
-          <h2>Ansuf Yiswen</h2>
+          <h2>Gallery</h2>
 
         </Carousel.Caption>
       </Carousel.Item>
@@ -29,10 +29,7 @@ function CarouselPage() {
             alt="Second slide"
           />
         </Container>
-        <Carousel.Caption>
-          <h2>Ansuf Yiswen</h2>
-
-        </Carousel.Caption>
+       
       </Carousel.Item>
 
       <Carousel.Item>
@@ -43,10 +40,7 @@ function CarouselPage() {
             alt="third slide"
           />
         </Container>
-        <Carousel.Caption>
-          <h2>Ansuf Yiswen</h2>
-
-        </Carousel.Caption>
+       
       </Carousel.Item>
 
     </Carousel>

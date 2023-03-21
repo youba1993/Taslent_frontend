@@ -1,5 +1,5 @@
-import { Col, Container, Row } from "react-bootstrap";
-import CarouselPage from "../components/Carrousel";
+import { Button, Col, Container, Row } from "react-bootstrap";
+
 import { taslentUrl } from "../images/ImageUrl";
 
 
@@ -8,9 +8,15 @@ const Home = () => {
     const { unite, respect, knowledge } = taslentUrl.homePage
     return (
         <div>
+            <div className="background-image text-center text-white scroll-bg">
+                <h1 className=" p-2 size-lg" style={{fontSize: "65px"}}>Ansuf Yiswen</h1>
+                <h3>Taslent</h3>
+                <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
+                <Button variant="outline-light" style={{fontWeight: "bold"}}>Learn more</Button>
+                <hr></hr>
+                <Button  variant="outline-info" style={{fontWeight: "bold"}} >Donate</Button>
+            </div>
 
-            
-            <CarouselPage />
             <Container className="my-3 py-4" >
                 <Row className='bg-light text-left row-cols-1'>
                     <Col className="col-sm-4" >
@@ -54,9 +60,9 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
+            <div className="background-image" style={{height: "30vh" }}>
 
-            
-
+            </div>
         </div>
     );
 }

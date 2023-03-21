@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ButtonBackToTop from "./components/ButtonBackToTop";
+import Gallery from "./pages/Gallery";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/gallery" element={<Gallery />} />
       </Routes>
       <ButtonBackToTop />
       <Footer />
