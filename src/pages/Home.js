@@ -1,24 +1,24 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import ProjectCom from "../components/ProjectCom";
+import { projects } from "../data/projectsData";
 import { taslentUrl } from "../images/ImageUrl";
-
-
 
 const Home = () => {
     const { unite, respect, knowledge } = taslentUrl.homePage
+
     return (
         <div>
             <div className="background-image text-center text-white scroll-bg">
-                <h1 className=" p-2 size-lg" style={{fontSize: "65px"}}>Ansuf Yiswen</h1>
+                <h1 className=" p-2 size-lg" style={{ fontSize: "65px" }}>Ansuf Yiswen</h1>
                 <h3>Taslent</h3>
                 <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
-                <Link to={"/about"}><Button variant="outline-light" style={{fontWeight: "bold"}}>Learn more</Button></Link>
+                <Link to={"/about"}><Button variant="outline-light" style={{ fontWeight: "bold" }}>Learn more</Button></Link>
                 <hr></hr>
-                <Link to={"/underConstruction"} ><Button  variant="outline-info" style={{fontWeight: "bold"}} >Donate</Button></Link>
+                <Link to={"/underConstruction"} ><Button variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
             </div>
 
-            <Container className="my-3 py-4" >
+            <Container className="my-3 py-2" >
                 <Row className='bg-light text-left row-cols-1'>
                     <Col className="col-sm-4" >
                         <figure className="mt-3" >
@@ -61,10 +61,20 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            <div className="background-image" style={{height: "30vh" }}>
+            <Container >
+                <Link to={"/projects"}><h2 className="text-center ">Projects:</h2></Link>
+                <Row xs={1} md={3} className="g-4 py-4 ">
+                    {projects.map((project, index) =>
+                        <Col className="d-flex align-self-stretch" >
+                            <ProjectCom key={index} project={project} />
+                        </Col>
+                    )}
+                </Row>
+            </Container>
+            <div className="background-image" style={{ height: "30vh" }}>
 
             </div>
-        </div>
+        </div >
     );
 }
 

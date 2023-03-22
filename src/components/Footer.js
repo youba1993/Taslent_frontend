@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </section>
       <div  className='text-center p-3 bg-light' >
-        &copy; {new Date().getFullYear()} Copyright:{' '} Village Taslent
+        &copy; {new Date().getFullYear()} Copyright:{' '}  Taslent Village
       </div>
     </Container>
     
