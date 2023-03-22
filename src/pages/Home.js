@@ -62,7 +62,7 @@ const Home = () => {
                 </Row>
             </Container>
             <Container >
-                <Link to={"/projects"}><h2 className="text-center ">Projects:</h2></Link>
+                <Link to={"/projects"}><h1 className="text-center ">Projects:</h1></Link>
                 <Row xs={1} md={3} className="g-4 py-4 ">
                     {projects.map((project, index) =>
                         <Col className="d-flex align-self-stretch" >
