@@ -7,6 +7,7 @@ import ButtonBackToTop from "./components/ButtonBackToTop";
 import Gallery from "./pages/Gallery";
 import Projects from "./pages/Projects";
 import UnderConstruction from "./pages/UnderConstruction";
+import LinksPage from "./pages/LinksPage";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/gallery" element={<Gallery />} />
         <Route exact path="/projects" element={<Projects />} />
-
+        <Route exact path="/links" element={<LinksPage />} />
         <Route exact path="/underConstruction" element={<UnderConstruction />} />
       </Routes>
       <ButtonBackToTop />
