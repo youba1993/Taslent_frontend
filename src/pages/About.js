@@ -101,7 +101,7 @@ const About = () => {
                                                 <li>Management of the association's assets.</li>
                                             </ul>
                                         </p>
-                                        <h5>ARTICLE-8: </h5><p>The association is managed by members of the office elected by the GA for a period of 2 years. The committee is made up of the members of the office, namely:
+                                        <h5>ARTICLE-8: </h5><p>The association is managed by members of the office elected by the GA for a period of 2 years. The committee is made up of the members of the office, namely:</p>
                                             <ol>
                                                 <li>The president and two vice-presidents</li>
                                                 <li>The treasurer and an assistant treasurer</li>
@@ -114,7 +114,7 @@ const About = () => {
                                                 <li>The general meeting is convened 48 hours in advance by posting.</li>
                                                 <li>In case of emergency The call to the general assembly can be made by sound system through the imam or his representative</li>
                                             </ul>
-                                        </p>
+                                        
                                         <h5>ARTICLE-9: </h5><p>The ordinary general meeting meets once a month. It validly deliberates on the first ballot since no quorum is required. Decisions will be taken by simple majority, ie half of the votes cast plus one clear vote (for or against); In the event of a tie, the President's vote is decisive.</p>
                                     </Col>
 

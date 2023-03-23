@@ -26,11 +26,9 @@ p {
 #history p {
   text-indent: 50px;
 }
-
+/* Home Css */
 .background-image {
   background-image: url('https://ik.imagekit.io/nvnw6o7ew/Taslent/taslent-background_MoL6gOpqw.jpg?updatedAt=1679200829062');
-  width: 100vw;
-  height: 50vh; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -38,7 +36,9 @@ p {
   background-color: #957a7ab7;
 }
 
-#header #basic-navbar-nav .nav-link {
+/* ........................ */
+
+#header .nav-link {
   font-weight: bold;
   color: brown;
 }
@@ -48,3 +48,47 @@ h5 {
   font-style: italic;
   text-decoration-line: underline;
 }
+
+/* ProjectCom Css */
+
+.project-card {
+  max-width: 20rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project-footer {
+  background-color: #f8f9fa;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.project-footer p {
+  margin-bottom: 0;
+}
+
+.project-footer i {
+  font-size: 1.2rem;
+  color: #777;
+  margin-right: 0.5rem;
+}
+
+/* ***************** */
