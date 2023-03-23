@@ -81,8 +81,8 @@ const Home = () => {
             {/* Projects Section */}
             <div className="bg-light py-5">
                 <Container className="my-5">
-                    <h2 className="text-center mb-5">Projects</h2>
-                    <Row xs={1} md={3} className="g-4">
+                    <h2 className="text-center mb-5">Our Projects</h2>
+                    <Row className="row-cols-1 row-cols-md-3 g-4" >
                         {projects.map((project) => (
 
                             <React.Fragment key={project.id}>
