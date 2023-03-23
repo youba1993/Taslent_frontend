@@ -3,7 +3,7 @@ import { AiOutlineComment, AiOutlineLike } from "react-icons/ai";
 
 
 const ProjectCom = ({ project }) => {
-    const { title, image, description, difficulty } = project;
+    const { title, image, description } = project;
 
     return (
         <Card className="project-card">
