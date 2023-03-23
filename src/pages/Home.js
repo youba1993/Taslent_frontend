@@ -63,7 +63,8 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container >
+            <div className="background-image" style={{ height: "5vh" }}></div>
+            <Container className="my-3 py-2">
                 <Link to={"/projects"}><h1 className="text-center ">Projects:</h1></Link>
                 <Row xs={1} md={3} className="g-4 py-4 ">
                     {projects.map((project, index) =>
@@ -73,9 +74,9 @@ const Home = () => {
                     )}
                 </Row>
             </Container>
-            <div className="background-image" style={{ height: "30vh" }}>
+            <div className="background-image" style={{ height: "20vh" }}></div>
 
-            </div>
+            
         </div >
     );
 }
