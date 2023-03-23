@@ -28,7 +28,7 @@ const Home = () => {
     return (
         <div>
             {/* Hero Section */}
-            <animated.div className="background-image text-center text-white scroll-bg pb-5" style={heroAnimation}>
+            <animated.div className="background-image text-center text-white scroll-bg pb-2" style={heroAnimation}>
                 <div className="background-image text-center text-white scroll-bg pb-5">
                     <h1 className=" p-2 size-lg" style={{ fontSize: "65px" }}>Ansuf Yiswen</h1>
                     <h3>Taslent</h3>
@@ -41,34 +41,33 @@ const Home = () => {
             </animated.div>
 
             {/* Features Section */}
-
             <Container className="my-5">
                 <animated.h2 className="text-center mb-5" style={featuresAnimation}>Our Values</animated.h2>
-                <Row className="row-cols-1 row-cols-md-3 g-4">
-                    <Col>
-                        <animated.div className="text-center" style={featuresAnimation}>
+                <Row className="row-cols-1 row-cols-md-3 g-4 ">
+                    <Col className="align-self-stretch">
+                        <animated.div className="text-center feature-card" style={featuresAnimation}>
                             <img className="img-thumbnail mb-3" src={unite} alt="unity" />
-                            <h3 className="text-success mb-3">Unity</h3>
+                            <h3 className="text-info mb-3">Unity</h3>
                             <p className="mb-3">
                                 "Coming together is a beginning, staying together is progress, and working together is success."
                             </p>
                             <p className="blockquote-footer mb-0">Henry Ford</p>
                         </animated.div>
                     </Col>
-                    <Col>
-                        <animated.div className="text-center" style={featuresAnimation}>
+                    <Col className="align-self-stretch">
+                        <animated.div className="text-center feature-card" style={featuresAnimation}>
                             <img className="img-thumbnail mb-3" src={knowledge} alt="knowledge" />
-                            <h3 className="text-danger mb-3">Knowledge</h3>
+                            <h3 className="text-info mb-3">Knowledge</h3>
                             <p className="mb-3">
                                 "Education is the passport to the future, for tomorrow belongs to those who prepare for it today."
                             </p>
                             <p className="blockquote-footer mb-0">Malcolm X</p>
                         </animated.div>
                     </Col>
-                    <Col>
-                        <animated.div className="text-center" style={featuresAnimation}>
+                    <Col className="align-self-stretch">
+                        <animated.div className="text-center feature-card" style={featuresAnimation}>
                             <img className="img-thumbnail mb-3" src={respect} alt="respect" />
-                            <h3 className="text-primary mb-3">Respect</h3>
+                            <h3 className="text-info mb-3">Respect</h3>
                             <p className="mb-3">
                                 "Treat people the way you want to be treated. Talk to people the way you want to be talked to. Respect is earned, not given."
                             </p>
