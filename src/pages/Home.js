@@ -13,9 +13,11 @@ const Home = () => {
                 <h1 className=" p-2 size-lg" style={{ fontSize: "65px" }}>Ansuf Yiswen</h1>
                 <h3>Taslent</h3>
                 <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
-                <Link to={"/about"}><Button variant="outline-light" style={{ fontWeight: "bold" }}>Learn more</Button></Link>
-                <hr></hr>
-                <Link to={"/underConstruction"} ><Button variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
+                <div className="d-flex justify-content-center">
+                <Link to={"/about"}><Button className="me-2" variant="outline-light" style={{ fontWeight: "bold" }}>Learn more</Button></Link>
+                <Link to={"/underConstruction"} ><Button className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
+                </div>
+                
             </div>
 
             <Container className="my-3 py-2" >
