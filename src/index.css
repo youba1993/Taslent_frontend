@@ -142,3 +142,58 @@ h5 {
 }
 
 /* ***************** */
+
+
+/* ABout styles */
+.nav-link-custom {
+  color: rgb(206, 144, 144);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  background-color: rgb(206, 144, 144);
+  color: #fff;
+}
+
+.about-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-section .bg-light {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.about-section .bg-light p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.about-section .bg-light ul {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-section .bg-light ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

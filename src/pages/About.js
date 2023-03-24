@@ -5,23 +5,23 @@ import { Col, Container, Nav, Row } from "react-bootstrap";
 const About = () => {
     return (
         <div>
-             
+
             <Container>
                 <Row>
 
-                    <Nav className="ml-auto" id="basic-navbar-nav" >
+                    <Nav className="ml-auto" id="basic-navbar-nav">
                         <Nav.Item>
-                            <Nav.Link className="active " href='#history' type="button" >History</Nav.Link>
+                            <Nav.Link href='#history' className="nav-link-custom">History</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="active" href='#villageRules' >Village Charter</Nav.Link>
+                            <Nav.Link href='#villageRules' className="nav-link-custom">Village Charter</Nav.Link>
                         </Nav.Item>
                     </Nav>
 
                     <Col>
                         <Container className="py-4">
-                            <article className="text-left mt-3" id="history">
-                                <h1 style={{ fontWeight: "bold" }}>History </h1>
+                            <article className="about-section text-left mt-3" id="history">
+                                <h1 >History </h1>
                                 <Row className="bg-light py-3">
                                     <Col className="col-sm-6">
                                         <p>Taslent g’Illoulen is a village located 7 km from Akbou and situated on the west bank of the Soummam river in the foothills of the Djurdjura mountain range. It stands at an altitude of over 700 meters and is surrounded by the villages of El Mechta and Ath-Sellam to the west, Iamouren, Tighilt, and Ath-Ammar-Ouzeggan to the north, Tazaghart to the east, and Ighram to the south. Formerly known as Aguni n’Teslent, it takes its name from a century-old tree, the ash tree (aslen, taslent), which is widespread in its territory. </p>
@@ -47,8 +47,8 @@ const About = () => {
                             </article>
                         </Container>
                         <Container className="py-4">
-                            <article className="text-left mt-3" id="villageRules">
-                                <h1 style={{ fontWeight: "bold" }}>Village Charter</h1>
+                            <article className="about-section text-left mt-3" id="villageRules">
+                                <h1 >Village Charter</h1>
                                 <Row className="bg-light py-3">
 
                                     <Col className="col-sm-4">
@@ -57,8 +57,8 @@ const About = () => {
                                     <Col className="col-sm-8">
                                         <p>Faithful to the commitments of our ancestors. We have the elements of the past, but at the same time, we adapt them to the present. We worked according to the means available in order to perpetuate the vital dynamism of our society. The development of this document allows us to lay a foundation, a reference for future generations.</p>
                                     </Col>
-                                    </Row>
-                                    <Row className="bg-light py-3">
+                                </Row>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 1: PURPOSE</h4>
                                     </Col>
@@ -71,131 +71,131 @@ const About = () => {
                                             During the period of non-payment, the person concerned loses all his rights vis-à-vis the village committee, reinstatement will take place after the payment of the rights.</p>
                                         <h5>ARTICLE-5: </h5><p>The village committee is the only legitimate representative of the villagers to the authorities.</p>
                                     </Col>
-                                    </Row>
-                                    <Row className="bg-light py-3">
+                                </Row>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 2: OBJECTIVES AND MISSIONS </h4>
                                     </Col>
                                     <Col className="col-sm-8">
-                                        <h5>ARTICLE-6: </h5><p>The objectives of the committee are the search for solutions to the problems relating to the development of the village to improve the living environment.
-                                            <ul>
-                                                <li>Mutual aid (solidarity)</li>
-                                                <li>Listening to the needs of the villagers </li>
-                                                <li>Celebration of traditional festivals</li>
-                                                <li>Creation of a "village festival" day</li>
-                                                <li>Promote the TASLENT village</li>
-                                                <li>Acquisition of tools and materials necessary for burials</li>
-                                                <li>Acquisition of the necessary furniture for the festivities of the villagers.</li>
-                                            </ul>
-                                        </p>
-                                        <h5>ARTICLE-7: </h5><p>The office of the association, thus composed, is responsible on behalf of the association for:
-                                            <ul>
-                                                <li>Represent the association nearby public authorities.</li>
-                                                <li>Conclude any contract, convention or agreement related to its purpose.</li>
-                                                <li>Acquire, free of charge or against payment, movable or immovable property for the needs
-                                                    activities of the association as provided for by the statutes.</li>
-                                                <li>Suggest to the decision-making body all measures likely to improve the system of organization and the installation of various bodies of the association.</li>
-                                                <li>Make amendments to the statutes and internal regulations.</li>
-                                                <li>Define the attributions of each vice president and his assessors.</li>
-                                                <li>Guaranteed the application of the statutes as well as the decisions of the general assemblies.</li>
-                                                <li>Management of the association's assets.</li>
-                                            </ul>
-                                        </p>
+                                        <h5>ARTICLE-6: </h5><p>The objectives of the committee are the search for solutions to the problems relating to the development of the village to improve the living environment.</p>
+                                        <ul>
+                                            <li>Mutual aid (solidarity)</li>
+                                            <li>Listening to the needs of the villagers </li>
+                                            <li>Celebration of traditional festivals</li>
+                                            <li>Creation of a "village festival" day</li>
+                                            <li>Promote the TASLENT village</li>
+                                            <li>Acquisition of tools and materials necessary for burials</li>
+                                            <li>Acquisition of the necessary furniture for the festivities of the villagers.</li>
+                                        </ul>
+
+                                        <h5>ARTICLE-7: </h5><p>The office of the association, thus composed, is responsible on behalf of the association for:</p>
+                                        <ul>
+                                            <li>Represent the association nearby public authorities.</li>
+                                            <li>Conclude any contract, convention or agreement related to its purpose.</li>
+                                            <li>Acquire, free of charge or against payment, movable or immovable property for the needs
+                                                activities of the association as provided for by the statutes.</li>
+                                            <li>Suggest to the decision-making body all measures likely to improve the system of organization and the installation of various bodies of the association.</li>
+                                            <li>Make amendments to the statutes and internal regulations.</li>
+                                            <li>Define the attributions of each vice president and his assessors.</li>
+                                            <li>Guaranteed the application of the statutes as well as the decisions of the general assemblies.</li>
+                                            <li>Management of the association's assets.</li>
+                                        </ul>
+
                                         <h5>ARTICLE-8: </h5><p>The association is managed by members of the office elected by the GA for a period of 2 years. The committee is made up of the members of the office, namely:</p>
-                                            <ol>
-                                                <li>The president and two vice-presidents</li>
-                                                <li>The treasurer and an assistant treasurer</li>
-                                                <li>Secretary and Assistant Secretary</li>
-                                                <li>The eight alternates</li>
-                                            </ol>
-                                            <ul>
-                                                <li>Board members meet once a month. The decisions are taken on a majority basis. In the event of a tie, the casting vote of the President.</li>
-                                                <li>The members of the office report once a year to the general meeting on the general situation and the financial statement for the year. A discharge is given each year by the general meeting after approval of its reports.</li>
-                                                <li>The general meeting is convened 48 hours in advance by posting.</li>
-                                                <li>In case of emergency The call to the general assembly can be made by sound system through the imam or his representative</li>
-                                            </ul>
-                                        
+                                        <ol>
+                                            <li>The president and two vice-presidents</li>
+                                            <li>The treasurer and an assistant treasurer</li>
+                                            <li>Secretary and Assistant Secretary</li>
+                                            <li>The eight alternates</li>
+                                        </ol>
+                                        <ul>
+                                            <li>Board members meet once a month. The decisions are taken on a majority basis. In the event of a tie, the casting vote of the President.</li>
+                                            <li>The members of the office report once a year to the general meeting on the general situation and the financial statement for the year. A discharge is given each year by the general meeting after approval of its reports.</li>
+                                            <li>The general meeting is convened 48 hours in advance by posting.</li>
+                                            <li>In case of emergency The call to the general assembly can be made by sound system through the imam or his representative</li>
+                                        </ul>
+
                                         <h5>ARTICLE-9: </h5><p>The ordinary general meeting meets once a month. It validly deliberates on the first ballot since no quorum is required. Decisions will be taken by simple majority, ie half of the votes cast plus one clear vote (for or against); In the event of a tie, the President's vote is decisive.</p>
                                     </Col>
 
-                                    </Row>
-                                    <Row className="bg-light py-3">
+                                </Row>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 3: FINANCIAL PROVISIONS</h4>
                                     </Col>
                                     <Col className="col-sm-8">
                                         <h5>ARTICLE-10: </h5><p>The amount of the contributions is fixed by the general assembly. Contributions apply to any adult head of household. The subscription can be paid either by check payable to the association, or in cash against delivery of a receipt. Social cases are exempt from contributions.</p>
                                         <h5>ARTICLE-11: </h5><p>Is considered social case the head of the family without resources proposed by the committee and submitted to the approval of the general assembly of the village.</p>
-                                        <h5>ARTICLE-12: </h5><p>The resources of the village in accordance with the regulations in force come from:
-                                            <ol>
-                                                <li>Contributions</li>
-                                                <li>Donations</li>
-                                                <li>Income related to its activities</li>
-                                                <li>Subsidies</li>
-                                            </ol>
-                                        </p>
+                                        <h5>ARTICLE-12: </h5><p>The resources of the village in accordance with the regulations in force come from: </p>
+                                        <ol>
+                                            <li>Contributions</li>
+                                            <li>Donations</li>
+                                            <li>Income related to its activities</li>
+                                            <li>Subsidies</li>
+                                        </ol>
+
                                         <h5>ARTICLE-13: </h5><p>Only the person who is up to date with his contributions will benefit from tombstones, sands, concrete blocks as well as the property of the village.</p>
                                         <h5>ARTICLE-14: </h5><p>The association has a bank account. Any disbursement of funds must be paid by check signed jointly by the treasurer and the president.</p>
-                                        <h5>ARTICLE-15: </h5><p>The accounts of the association must be presented in the form of a statement comprising two parts:
-                                            <ul>
-                                                <li>Resources component: they must be justified by means of a receipt declined with each entry of funds.</li>
-                                                <li>Expenses section: they must be justified at each outflow of funds by a supporting document (invoices or voucher; expenditure order).</li>
-                                            </ul>
-                                        </p>
+                                        <h5>ARTICLE-15: </h5><p>The accounts of the association must be presented in the form of a statement comprising two parts: </p>
+                                        <ul>
+                                            <li>Resources component: they must be justified by means of a receipt declined with each entry of funds.</li>
+                                            <li>Expenses section: they must be justified at each outflow of funds by a supporting document (invoices or voucher; expenditure order).</li>
+                                        </ul>
+
                                     </Col>
-                                    </Row>
-                                    <Row className="bg-light py-3">
+                                </Row>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 4: MISCELLANEOUS PROVISIONS</h4>
                                     </Col>
                                     <Col className="col-sm-8">
-                                        <h5>ARTICLE-16: </h5><p>The detailed inventory of the village's assets will be presented at the latest at the end of each year. The terms of use and rental of these assets are set at a general meeting.
-                                            <ul>
-                                                <li>With regard to deaths, the provision of these goods is free for the villagers and even for citizens outside the village on an exceptional basis.</li>
-                                                <li>The olive trees of the village are auctioned at the start of the season at a general meeting.</li>
-                                                <li>The cleaning of the cemetery will be done from the month of June; the highest bidder wins works</li>
-                                                <li>The cleaning of public fountains (sources of the village) will be done in May of each year</li>
-                                            </ul>
-                                        </p>
+                                        <h5>ARTICLE-16: </h5><p>The detailed inventory of the village's assets will be presented at the latest at the end of each year. The terms of use and rental of these assets are set at a general meeting.</p>
+                                        <ul>
+                                            <li>With regard to deaths, the provision of these goods is free for the villagers and even for citizens outside the village on an exceptional basis.</li>
+                                            <li>The olive trees of the village are auctioned at the start of the season at a general meeting.</li>
+                                            <li>The cleaning of the cemetery will be done from the month of June; the highest bidder wins works</li>
+                                            <li>The cleaning of public fountains (sources of the village) will be done in May of each year</li>
+                                        </ul>
+
                                         <h5>ARTICLE-17: </h5><p>Anyone wishing to make their house available to someone from outside the village must keep the village committee informed.</p>
-                                        <h5>ARTICLE-18: </h5><p>Toute personne ayant atteint l'âge de majorité chef de famille est tenu d'assister:
-                                            <ol>
-                                                <li>The general assembly of the village</li>
-                                                <li>Volunteering</li>
-                                                <li>At funerals</li>
-                                                <li>Emergencies</li>
-                                                <li>Respond to any call from the committee</li>
-                                            </ol>
-                                        </p>
+                                        <h5>ARTICLE-18: </h5><p>Toute personne ayant atteint l'âge de majorité chef de famille est tenu d'assister:</p>
+                                        <ol>
+                                            <li>The general assembly of the village</li>
+                                            <li>Volunteering</li>
+                                            <li>At funerals</li>
+                                            <li>Emergencies</li>
+                                            <li>Respond to any call from the committee</li>
+                                        </ol>
+
                                     </Col>
-                                    </Row>
-                                    <Row className="bg-light py-3">
+                                </Row>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 5: DISCIPLINARY PROVISION</h4>
                                     </Col>
                                     <Col className="col-sm-8">
                                         <h5>ARTICLE-19: </h5><p>
                                             Any amount paid or any property acquired is property of the village. Resignation or exclusion does not entitle you to any reimbursement.</p>
-                                        <h5>ARTICLE-20: </h5><p>Any disturbance to the public tranquility of the village; the person concerned will be called to order at a general meeting and will pay a fine, if he repeats the offense he will be brought before a disciplinary committee, once decided, a complaint will be filed.
-                                            <ul>
-                                                <li>Legal proceedings will be initiated for the following types of offences:</li>
-                                            </ul>
-                                            <ol>
-                                                <li>Encroachments of public spaces</li>
-                                                <li>forest fire</li>
-                                                <li>Excessive use of pipes on public fountain in summer</li>
-                                                <li>Nocturnal noise disrupts public tranquility</li>
-                                                <li>Discharge of wastewater or waste in public spaces</li>
-                                                <li>Theft and damage to village public property</li>
-                                            </ol>
+                                        <h5>ARTICLE-20: </h5><p>Any disturbance to the public tranquility of the village; the person concerned will be called to order at a general meeting and will pay a fine, if he repeats the offense he will be brought before a disciplinary committee, once decided, a complaint will be filed.</p>
+                                        <ul>
+                                            <li>Legal proceedings will be initiated for the following types of offences:</li>
+                                        </ul>
+                                        <ol>
+                                            <li>Encroachments of public spaces</li>
+                                            <li>forest fire</li>
+                                            <li>Excessive use of pipes on public fountain in summer</li>
+                                            <li>Nocturnal noise disrupts public tranquility</li>
+                                            <li>Discharge of wastewater or waste in public spaces</li>
+                                            <li>Theft and damage to village public property</li>
+                                        </ol>
 
-                                            Any person from outside the village causing harm or disturbing the public tranquility of the village will be the subject of a complaint to the competent courts.
-                                        </p>
+                                        <p>Any person from outside the village causing harm or disturbing the public tranquility of the village will be the subject of a complaint to the competent courts.</p>
+
                                         <h5>ARTICLE-21: </h5><p>Any member of the office who, without reason, has not attended five consecutive meetings, may be considered as having resigned.</p>
                                         <h5>ARTICLE-22: </h5><p>This regulation was adopted on , may be subject to amendment provided that it is in the interest of the village; it must be approved by the general assembly.</p>
                                     </Col>
-                                    </Row>
-                                    <Row className="bg-light py-3">
+                                </Row>
+                                <Row className="bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CONCLUSION:</h4>
                                     </Col>
