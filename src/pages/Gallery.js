@@ -7,7 +7,7 @@ import GalleryItem from '../components/GalleryItem';
 
 const Gallery = () => {
     const [activeCategory, setActiveCategory] = useState('all');
-    const [userImages, setUserImages] = useState([]);
+    // const [userImages, setUserImages] = useState([]);
     // const [title, setTitle] = useState("");
     // const [description, setDescription] = useState("");
     // const [category, setCategory] = useState("");
@@ -108,9 +108,9 @@ const Gallery = () => {
                 <GalleryItem key={item.id} item={item} />
               ))}
       
-            {userImages.map((image, index) => (
+            {/* {userImages.map((image, index) => (
               <GalleryItem key={index} item={image} />
-            ))}
+            ))} */}
           </div>
 
           {/* <div className="d-flex justify-content-center mt-5">
