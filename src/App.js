@@ -8,6 +8,9 @@ import Gallery from "./pages/Gallery";
 import Projects from "./pages/Projects";
 import UnderConstruction from "./pages/UnderConstruction";
 import LinksPage from "./pages/LinksPage";
+import NewsAndEvents from "./pages/NewsAndEvents";
+import QandA from "./pages/QandA";
+import Contact from "./pages/Contact";
 
 function App() {
 
@@ -20,6 +23,9 @@ function App() {
         <Route exact path="/gallery" element={<Gallery />} />
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/links" element={<LinksPage />} />
+        <Route exact path="/news&events" element={<NewsAndEvents />} />
+        <Route exact path="/qa" element={<QandA />} />
+        <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/underConstruction" element={<UnderConstruction />} />
       </Routes>
       <ButtonBackToTop />

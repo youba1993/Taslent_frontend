@@ -1,11 +1,70 @@
-import { Container } from "react-bootstrap";
+import React from 'react';
+import { Container, Form, Button } from 'react-bootstrap';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
-    return (
-        <Container >
-            <iframe title="taslent" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3208.364625570194!2d4.4803389!3d36.472908399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128cfc28db288f5b%3A0x4d0c585a1c71c175!2sTaslent%2C%20Ighram%2C%20Algeria!5e0!3m2!1sen!2sus!4v1679116738139!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </Container>
-    );
-}
+  return (
+    <Container className='my-5'>
+      <h1 className='text-center'>Contact Us</h1>
+      <p className='text-center'>
+        We'd love to hear from you! Please fill out the form below to get in touch with us.
+      </p>
+
+      <div className='d-flex justify-content-center mt-5'>
+        <div className='me-5'>
+          <div className='d-flex align-items-center'>
+            <AiOutlineMail size={28} className='me-2' />
+            <div>
+              <div className='fw-bold'>Email</div>
+              <a href='mailto:info@taslentvillage.com' className='text-decoration-none'>
+                info@taslentvillage.com
+              </a>
+            </div>
+          </div>
+          <div className='d-flex align-items-center mt-4'>
+            <FaPhoneAlt size={28} className='me-2' />
+            <div>
+              <div className='fw-bold'>Phone</div>
+              <a href='tel:+213123456789' className='text-decoration-none'>
+                +213 (123) 456-789
+              </a>
+            </div>
+          </div>
+          <div className='d-flex align-items-center mt-4'>
+            <FaMapMarkerAlt size={28} className='me-2' />
+            <div>
+              <div className='fw-bold'>Address</div>
+              <div>Taslent Village, Akbou, Bejaia, Algeria</div>
+            </div>
+          </div>
+        </div>
+
+        <div className='border-start px-4'>
+          <Form>
+            <Form.Group controlId='formBasicName'>
+              <Form.Label>Name</Form.Label>
+              <Form.Control type='text' placeholder='Enter your name' />
+            </Form.Group>
+
+            <Form.Group controlId='formBasicEmail'>
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type='email' placeholder='Enter your email' />
+            </Form.Group>
+
+            <Form.Group controlId='formBasicMessage'>
+              <Form.Label>Message</Form.Label>
+              <Form.Control as='textarea' placeholder='Enter your message' rows={4} />
+            </Form.Group>
+
+            <Button className='my-3' variant='primary' type='submit'>
+              Submit
+            </Button>
+          </Form>
+        </div>
+      </div>
+    </Container>
+  );
+};
 
 export default Contact;

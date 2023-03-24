@@ -18,11 +18,11 @@ function Header() {
                         <Nav.Link href="/projects">Projects</Nav.Link>
                         <Nav.Link href="/gallery">Gallery</Nav.Link>
                         <NavDropdown title="Activity" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/News">News</NavDropdown.Item>
+                            <NavDropdown.Item href="/news&events">News & Events</NavDropdown.Item>
                             <NavDropdown.Item href="/qa">Q&A</NavDropdown.Item>
                             <NavDropdown.Item href="/links">Links</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/contacts">Contacts</NavDropdown.Item>
+                            <NavDropdown.Item href="/contact">Contacts</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

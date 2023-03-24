@@ -12,7 +12,7 @@ const LinksPage = () => {
 
             return (
                 <Container>
-                    <h1 className="my-4">Link List</h1>
+                    <h1 className='text-center my-5'>Link List</h1>
                     <ListGroup>
                         {links.map((link) => (
                             <ListGroupItem key={link.id}>
