@@ -15,10 +15,6 @@ function CarouselPage() {
             alt="First slide"
           />
         </Container>
-        <Carousel.Caption>
-          <h2>Gallery</h2>
-
-        </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
