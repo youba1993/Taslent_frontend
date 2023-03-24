@@ -34,7 +34,7 @@ const Login = ({ show, handleClose }) => {
 
                         {activeTab === "login" && (
                             <p>
-                                <a href="#">Forgot your password?</a>
+                                <a href="/">Forgot your password?</a>
                             </p>
                         )}
                     </Form>
