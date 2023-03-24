@@ -14,7 +14,7 @@ const GalleryItem = ({ item, image }) => {
             <button className="btn btn-link">
               <FaHeart /> Like
             </button>
-            <button className="btn-secondary btn-link">
+            <button className="btn btn-link">
               <FaShare /> Share
             </button>
           </div>

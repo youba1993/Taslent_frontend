@@ -268,13 +268,6 @@ h4 {
   color: #555;
 }
 
-.btn {
-  margin-right: 1rem;
-  font-size: 0.9rem;
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
-}
-
 .btn-primary {
   background-color: #1877f2;
   border-color: #1877f2;
@@ -283,15 +276,4 @@ h4 {
 .btn-primary:hover {
   background-color: #3b5998;
   border-color: #3b5998;
-}
-
-.btn-secondary {
-  background-color: #f2f2f2;
-  border-color: #f2f2f2;
-  color: #555;
-}
-
-.btn-secondary:hover {
-  background-color: #e6e6e6;
-  border-color: #e6e6e6;
 }
