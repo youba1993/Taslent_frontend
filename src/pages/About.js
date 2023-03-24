@@ -22,7 +22,7 @@ const About = () => {
                         <Container className="py-4">
                             <article className="about-section text-left mt-3" id="history">
                                 <h1 >History </h1>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-6">
                                         <p>Taslent g’Illoulen is a village located 7 km from Akbou and situated on the west bank of the Soummam river in the foothills of the Djurdjura mountain range. It stands at an altitude of over 700 meters and is surrounded by the villages of El Mechta and Ath-Sellam to the west, Iamouren, Tighilt, and Ath-Ammar-Ouzeggan to the north, Tazaghart to the east, and Ighram to the south. Formerly known as Aguni n’Teslent, it takes its name from a century-old tree, the ash tree (aslen, taslent), which is widespread in its territory. </p>
 
@@ -49,16 +49,16 @@ const About = () => {
                         <Container className="py-4">
                             <article className="about-section text-left mt-3" id="villageRules">
                                 <h1 >Village Charter</h1>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
 
                                     <Col className="col-sm-4">
-                                        <h4>PREAMBLE :</h4>
+                                        <h4>PREAMBLE:</h4>
                                     </Col>
                                     <Col className="col-sm-8">
                                         <p>Faithful to the commitments of our ancestors. We have the elements of the past, but at the same time, we adapt them to the present. We worked according to the means available in order to perpetuate the vital dynamism of our society. The development of this document allows us to lay a foundation, a reference for future generations.</p>
                                     </Col>
                                 </Row>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 1: PURPOSE</h4>
                                     </Col>
@@ -72,9 +72,9 @@ const About = () => {
                                         <h5>ARTICLE-5: </h5><p>The village committee is the only legitimate representative of the villagers to the authorities.</p>
                                     </Col>
                                 </Row>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-4">
-                                        <h4>CHAPTER 2: OBJECTIVES AND MISSIONS </h4>
+                                        <h4>CHAPTER 2: OBJECTIVES AND MISSIONS</h4>
                                     </Col>
                                     <Col className="col-sm-8">
                                         <h5>ARTICLE-6: </h5><p>The objectives of the committee are the search for solutions to the problems relating to the development of the village to improve the living environment.</p>
@@ -119,7 +119,7 @@ const About = () => {
                                     </Col>
 
                                 </Row>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 3: FINANCIAL PROVISIONS</h4>
                                     </Col>
@@ -144,7 +144,7 @@ const About = () => {
 
                                     </Col>
                                 </Row>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 4: MISCELLANEOUS PROVISIONS</h4>
                                     </Col>
@@ -169,7 +169,7 @@ const About = () => {
 
                                     </Col>
                                 </Row>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CHAPTER 5: DISCIPLINARY PROVISION</h4>
                                     </Col>
@@ -195,7 +195,7 @@ const About = () => {
                                         <h5>ARTICLE-22: </h5><p>This regulation was adopted on , may be subject to amendment provided that it is in the interest of the village; it must be approved by the general assembly.</p>
                                     </Col>
                                 </Row>
-                                <Row className="bg-light py-3">
+                                <Row className="flex-column flex-md-row bg-light py-3">
                                     <Col className="col-sm-4">
                                         <h4>CONCLUSION:</h4>
                                     </Col>
