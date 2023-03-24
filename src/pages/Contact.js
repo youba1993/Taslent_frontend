@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -11,8 +11,8 @@ const Contact = () => {
         We'd love to hear from you! Please fill out the form below to get in touch with us.
       </p>
 
-      <div className='d-flex justify-content-center mt-5'>
-        <div className='me-5'>
+      <Row className='d-flex justify-content-center mt-5'>
+        <Col className='me-5'>
           <div className='d-flex align-items-center'>
             <AiOutlineMail size={28} className='me-2' />
             <div>
@@ -38,9 +38,9 @@ const Contact = () => {
               <div>Taslent Village, Akbou, Bejaia, Algeria</div>
             </div>
           </div>
-        </div>
+        </Col>
 
-        <div className='border-start px-4'>
+        <Col className='flex-column flex-md-row border-start p-4'>
           <Form>
             <Form.Group controlId='formBasicName'>
               <Form.Label>Name</Form.Label>
@@ -61,8 +61,8 @@ const Contact = () => {
               Submit
             </Button>
           </Form>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </Container>
   );
 };
