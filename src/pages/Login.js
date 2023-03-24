@@ -50,17 +50,17 @@ const Login = ({ show, handleClose }) => {
                 {activeTab === "login" && (
                     <div className="text-center mb-3">
                         Don't have an account yet?{" "}
-                        <a href="/signup" onClick={() => handleTabChange("signup")}>
+                        <Button variant="link" onClick={() => handleTabChange("signup")}>
                             Sign up here
-                        </a>
+                        </Button>
                     </div>
                 )}
                 {activeTab === "signup" && (
                     <div className="text-center mb-3">
                         Already have an account?{" "}
-                        <a href="/login" onClick={() => handleTabChange("login")}>
+                        <Button variant="link" onClick={() => handleTabChange("login")}>
                             Login here
-                        </a>
+                        </Button>
                     </div>
                 )}
             </Modal>
