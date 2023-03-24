@@ -195,3 +195,50 @@ h4 {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* News and Events CSS */
+.event-card {
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-title {
+  color: #df1a1a;
+  font-size: "1.5rem";
+  font-weight: "bold";
+  margin-bottom: "1rem"
+}
+
+/* Gallery Css */
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+}
+
+.category-container .btn {
+  margin-right: 10px;
+}
+
+.category-container .btn.active {
+  background-color: cyan;
+  color: #fff;
+}
+
+.gallery-row {
+  margin-top: 30px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+

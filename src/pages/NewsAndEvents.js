@@ -1,103 +1,50 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Card, Button, Tabs, Tab } from 'react-bootstrap';
+import { Container, Row, Col, Tabs, Tab } from 'react-bootstrap';
+import { events, news } from '../data/projectsData';
+import EventCard from '../components/EventCard';
+import NewsCard from '../components/NewsCard';
 
 const NewsAndEvents = () => {
     const [key, setKey] = useState('UpcomingEvents');
-    return (
 
-        <Container >
-            <h1 className="my-5 text-center">News and Events</h1>
+    return (
+        <Container className="my-5">
+            <h1 className="text-center mb-5">News and Events</h1>
             <Tabs
                 id="newsEvents-tabs"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
-                className="mb-3"
+                className="mb-5"
             >
                 <Tab eventKey="UpcomingEvents" title="Upcoming Events">
-                    <Row className="mb-5">
+                    <Row className="mt-5">
                         <Col>
-                            <hr />
-                            <Card className="mb-3">
-                                <Card.Body>
-                                    <Card.Title>Spring Festival</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">
-                                        April 15, 2023
-                                    </Card.Subtitle>
-                                    <Card.Text>
-                                        Join us for our annual Spring Festival, featuring live music,
-                                        food vendors, and a craft fair.
-                                    </Card.Text>
-                                    <Button variant="primary">Learn More</Button>
-                                </Card.Body>
-                            </Card>
-                            <Card>
-                                <Card.Body>
-                                    <Card.Title>Community Clean-Up Day</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">
-                                        May 1, 2023
-                                    </Card.Subtitle>
-                                    <Card.Text>
-                                        Help us keep our village clean by volunteering for our
-                                        community clean-up day.
-                                    </Card.Text>
-                                    <Button variant="primary">Learn More</Button>
-                                </Card.Body>
-                            </Card>
+                            <hr className="mt-0 mb-4" />
+                            {events.length > 0 ? (
+                                events.map((event) => (
+                                    <EventCard key={event.id} event={event} />
+                                ))
+                            ) : (
+                                <p className="text-center mb-0">No upcoming events found.</p>
+                            )}
                         </Col>
                     </Row>
                 </Tab>
                 <Tab eventKey="LatestNews" title="Latest News">
-                    <Row>
+                    <Row className="mt-5">
                         <Col>
-                            <hr />
-                            <Card className="mb-3">
-                                <Card.Img
-                                    variant="top"
-                                    src="https://ik.imagekit.io/nvnw6o7ew/Taslent/projects/announcement_lmsYRQzYi.jpg?updatedAt=1679637109349"
-                                />
-                                <Card.Body>
-                                    <Card.Title>Announcing our New Village Council Members</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">
-                                        March 1, 2023
-                                    </Card.Subtitle>
-                                    <Card.Text>
-                                        We are excited to welcome our newly elected village council
-                                        members, who will be working hard to make our village an even
-                                        better place to live.
-                                    </Card.Text>
-                                    <Button variant="primary">Read More</Button>
-                                </Card.Body>
-                            </Card>
-
-                            <Card className="mb-3">
-                                <Card.Img
-                                    variant="top"
-                                    src="https://ik.imagekit.io/nvnw6o7ew/Taslent/projects/FoodAid_scPbPXM-I.jpg?updatedAt=1679636254416"
-                                />
-                                <Card.Body>
-                                    <Card.Title>Food Aid Distribution</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">
-                                        March 22, 2023
-                                    </Card.Subtitle>
-                                    <Card.Text>
-                                        Thanks to the generosity of our community members and local
-                                        businesses, we have collected enough food to distribute to over 30
-                                        families in need. We will continue to organize food aid distribution
-                                        throughout the year to ensure that no one in our village goes
-                                        hungry.
-                                        <br></br>
-                                        <strong>If you or someone you know needs assistance, please contact us at: * *** *** ***</strong>
-                                    </Card.Text>
-                                    <Button variant="primary">Read More</Button>
-                                </Card.Body>
-                            </Card>
+                            <hr className="mt-0 mb-4" />
+                            {news.length > 0 ? (
+                                news.map((n) => <NewsCard key={n.id} news={n} />)
+                            ) : (
+                                <p className="text-center mb-0">No news articles found.</p>
+                            )}
                         </Col>
                     </Row>
                 </Tab>
             </Tabs>
         </Container>
-
     );
-}
+};
 
 export default NewsAndEvents;
