@@ -92,8 +92,8 @@ h1 {
   color: brown;
 }
 
-h4,
-h5 {
+h4 {
+  text-decoration-line: underline;
   font-style: italic;
 }
 
