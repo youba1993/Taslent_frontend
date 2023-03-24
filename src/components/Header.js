@@ -1,17 +1,27 @@
 import {
+    Button,
     Container,
     Nav,
     Navbar,
     NavDropdown,
 } from 'react-bootstrap';
-
+import React, { useState } from "react";
 import logo from "../images/logo-no-background.png"
+import Login from '../pages/Login';
 
 function Header() {
+    const [show, setShow] = useState(false);
+    
+    const handleClose = () => setShow(false);
+    const handleShow = (event) => {
+        event.preventDefault();
+        setShow(true);
+    }
+
     return (
         <Navbar collapseOnSelect bg="light" expand="lg" sticky="top">
             <Container className='justify-content-center' id='header' >
-                
+
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" >
                         <Nav.Link className=' me-3' href="/about">About Taslent</Nav.Link>
@@ -33,10 +43,13 @@ function Header() {
                     </Navbar.Brand>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#home" style={{ fontWeight: 'bold' }}>Login</Nav.Link>
+                    <Button variant="outline-info" onClick={(e)=>handleShow(e)}>
+                        Login
+                    </Button>
                 </Nav>
 
             </Container>
+            <Login show={show} handleClose={handleClose} />
         </Navbar>
     );
 }
