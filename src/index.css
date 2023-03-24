@@ -143,7 +143,7 @@ h4 {
 
 
 /* ABout styles */
-.nav-link-custom {
+#tab {
   color: rgb(206, 144, 144);
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -151,7 +151,7 @@ h4 {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-link-custom:hover {
+#tab:hover {
   background-color: rgb(206, 144, 144);
   color: #fff;
 }

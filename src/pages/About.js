@@ -1,4 +1,4 @@
-import { Col, Container, Nav, Row } from "react-bootstrap";
+import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 
 
 
@@ -7,18 +7,11 @@ const About = () => {
         <div>
 
             <Container>
-                <Row>
 
-                    <Nav className="ml-auto" id="basic-navbar-nav">
-                        <Nav.Item>
-                            <Nav.Link href='#history' className="nav-link-custom">History</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href='#villageRules' className="nav-link-custom">Village Charter</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
 
-                    <Col>
+                <Tabs defaultActiveKey="history" id="about-tabs">
+                    <Tab eventKey="history" title="History">
+
                         <Container className="py-4">
                             <article className="about-section text-left mt-3" id="history">
                                 <h1 >History </h1>
@@ -46,6 +39,8 @@ const About = () => {
                                 </Row>
                             </article>
                         </Container>
+                    </Tab>
+                    <Tab eventKey="villageRules" title="Village Charter">
                         <Container className="py-4">
                             <article className="about-section text-left mt-3" id="villageRules">
                                 <h1 >Village Charter</h1>
@@ -206,8 +201,9 @@ const About = () => {
                                 </Row>
                             </article>
                         </Container>
-                    </Col>
-                </Row>
+                    </Tab>
+                </Tabs>
+
             </Container>
         </div>
     );
