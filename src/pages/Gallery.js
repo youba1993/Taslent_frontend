@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import CarouselPage from '../components/Carrousel';
 import { categories, galleryItems } from '../data/galleryData';
 import GalleryItem from '../components/GalleryItem';
 
@@ -65,7 +64,7 @@ const Gallery = () => {
     return (
         <Container className="py-5">
           <h1 className="text-center mb-5">Gallery</h1>
-          <CarouselPage />
+          {/* <CarouselPage /> */}
           <p className="lead text-center py-4">
             Welcome to our gallery, where we showcase some of the beautiful sights
             and events of our village.
@@ -95,7 +94,7 @@ const Gallery = () => {
               ))}
             </div>
           </div>
-          <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="d-flex row row-cols-1 row-cols-md-3 g-4 align-self-stretch">
             {galleryItems
               .filter((item) => {
                 if (activeCategory === "all") {

@@ -242,3 +242,56 @@ h4 {
   margin-top: 50px;
 }
 
+/* GalleryItem css */
+
+.galleryitem {
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-primary {
+  background-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.btn-primary:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #555;
+}
+
+.btn-secondary:hover {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+}

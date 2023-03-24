@@ -15,6 +15,44 @@ export const galleryItems = [
       image: "https://ik.imagekit.io/nvnw6o7ew/Taslent/river_tpIblbUVx?updatedAt=1679203922343",
       description: "Village River"
     },
+    {
+      id: 3,
+      category: "nature",
+      title: "Taslent",
+      image: "https://ik.imagekit.io/nvnw6o7ew/Taslent/projects/nature2_WUTxWAJ6y.jpg?updatedAt=1679708131642",
+      description: "beautiful vue"
+    },
+    {
+      id: 4,
+      category: "nature",
+      title: "Flower",
+      image: "https://ik.imagekit.io/nvnw6o7ew/Taslent/projects/flower1_O7GahpwJE.jpg?updatedAt=1679708131293",
+      description: "Flower"
+    },
+    {
+      id: 5,
+      category: "nature",
+      title: "Flower",
+      image: "https://ik.imagekit.io/nvnw6o7ew/Taslent/projects/flower2_cNZFEDN8UO.jpg?updatedAt=1679708131471",
+      description: "Flower"
+    },
+    {
+      id: 6,
+      category: "nature",
+      title: "Olive",
+      image: "https://ik.imagekit.io/nvnw6o7ew/Taslent/projects/carroussel4_2lr8thORT.jpg?updatedAt=1679708571028",
+      description: "Olive"
+    },
+
+
+
+
+
+
+
+
+
+
     // {
     //   id: 3,
     //   category: "people",
