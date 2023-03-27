@@ -14,7 +14,7 @@ const Login = ({ show, handleClose }) => {
     const [activeTab, setActiveTab] = useState("login");
     const [data, setData] = useState({});
     const provider = new GoogleAuthProvider();
-    let auth = getAuth();
+    let auth = getAuth(appFirebase);
     const handleInput = (event) => {
         let newInput = { [event.target.name]: event.target.value };
         setData({ ...data, ...newInput })
