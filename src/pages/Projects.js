@@ -11,7 +11,7 @@ const Projects = () => {
             <h1 className="text-center mb-5">Projects</h1>
             <p className="lead text-center">Welcome to the Taslent community, where members work together to create positive change and make their village a better place. Here are a few examples of the projects our community has undertaken:</p>
            
-                <Row className="g-4 py-4">
+                <Row className="g-4 py-4 row-cols-md-3">
                     {projects.map((project) =>
                         <React.Fragment key={project.id}>
                             <Col className="d-flex align-self-stretch" >

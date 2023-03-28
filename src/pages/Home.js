@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
             </animated.div>
 
-            {/* Features Section */}
+            {/* Values Section */}
             <Container className="my-5">
                 <animated.h2 className="text-center mb-5" style={featuresAnimation}>Our Values</animated.h2>
                 <Row className="row-cols-1 row-cols-md-3 g-4 ">
@@ -77,13 +77,30 @@ const Home = () => {
                 </Row>
             </Container>
 
+             {/* Our Mission Section */}
+             <Container className="my-5" id="our-mission-section">
+                <animated.h2 className="text-center mb-5" style={featuresAnimation}>
+                    Our Mission
+                </animated.h2>
+                <p>At Taslent, we are dedicated to building a strong and inclusive community where everyone feels welcomed and valued.
+                    Our mission is to:
+                </p>
+                <ul>
+                    <li>Promote a sense of belonging and togetherness among community members</li>
+                    <li>Foster an environment of respect, empathy, and understanding</li>
+                    <li>Encourage collaboration and cooperation towards shared goals</li>
+                    <li>Celebrate diversity and promote cultural exchange</li>
+                    <li>Support the well-being and development of all community members</li>
+                </ul>
+                <p>We believe that by working together, we can create a better future for ourselves and future generations.</p>
+            </Container>
 
             {/* Projects Section */}
             <div className="bg-light py-5">
                 <Container className="my-5">
                     <h2 className="text-center mb-5">Our Projects</h2>
                     <Row className="row-cols-1 row-cols-md-3 g-4" >
-                        {projects.map((project) => (
+                        {projects.slice(0, 3).map((project) => (
 
                             <React.Fragment key={project.id}>
                                 <Col className="d-flex align-self-stretch" >

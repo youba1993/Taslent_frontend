@@ -28,6 +28,29 @@ h1 {
   background-color: #957a7ab7;
 }
 
+#our-mission-section {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  height: 100%;
+  text-align: center;
+  
+}
+
+#our-mission-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  
+}
+
+#our-mission-section p {
+  font-size: 18px;
+  line-height: 1.5;
+
+}
+
 .feature-card {
   background-color: #fff;
   padding: 3rem 2rem;
@@ -37,7 +60,7 @@ h1 {
   height: 100%;
 }
 
-.feature-card:hover {
+.feature-card:hover, #our-mission-section:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
