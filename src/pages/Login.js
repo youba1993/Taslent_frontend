@@ -8,9 +8,13 @@ import {
     GoogleAuthProvider,
     signInWithPopup
 } from "firebase/auth";
-
+import { useDispatch } from "react-redux";
+import { userLoaded } from "../features/user/userSlice";
 
 const Login = ({ show, handleClose }) => {
+    const dispatch = useDispatch();
+    
+
     const [activeTab, setActiveTab] = useState("login");
     const [data, setData] = useState({});
     const provider = new GoogleAuthProvider();
@@ -24,15 +28,16 @@ const Login = ({ show, handleClose }) => {
         setActiveTab(tab);
     };
 
-    const handleGoogle = () => 
-    {signInWithPopup(auth, provider)
+    const handleGoogle = () => {
+        signInWithPopup(auth, provider)
         .then((result) => {
             const user = result.user;
-            console.log(user)
-         
+            dispatch(userLoaded(user.email))
+            handleClose()
         }).catch((error) => {
-           alert(error)
-        });}
+            alert(error)
+        });
+    }
 
     const handleSubmit = () => {
         if (activeTab === "signup")
@@ -75,9 +80,9 @@ const Login = ({ show, handleClose }) => {
                         </div>
                     )} */}
 
-              
-                        <Button  variant="outline-info" className="my-3 " onClick={()=>{handleGoogle()}}>Signin with Google</Button>
-               
+
+                    <Button variant="outline-info" className="my-3 " onClick={() => { handleGoogle() }}>Signin with Google</Button>
+
 
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
