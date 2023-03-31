@@ -35,7 +35,7 @@ const Home = () => {
                     <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
                     <div className="d-flex justify-content-center">
                         <Link to={"/about"}><Button size="lg" className="me-2" variant="outline-light" >Learn more</Button></Link>
-                        <Link to={"/underConstruction"} ><Button size="lg" className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
+                        <Link to={"https://buy.stripe.com/test_6oEdS17frfOagw0000"} ><Button size="lg" className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
                     </div>
                 </div>
             </animated.div>
