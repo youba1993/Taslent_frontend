@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import { TbArrowUpCircle } from "react-icons/tb";
+import { TbCircleChevronUp } from "react-icons/tb";
 
 const ButtonBackToTop = () => {
     let mybutton;
@@ -23,7 +23,8 @@ const ButtonBackToTop = () => {
         <Button 
             onClick={backToTop}
             id="btn-back-to-top"
-            className="btn-floating bg-danger"
+            variant="outline-info"
+            className="btn-floating"
             size="sm"
             style={{
                 position: "fixed",
@@ -32,7 +33,7 @@ const ButtonBackToTop = () => {
                 display: "none",
               }}
         >
-            <TbArrowUpCircle />
+            <TbCircleChevronUp />
         </Button>
     );
 }
