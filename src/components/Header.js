@@ -56,12 +56,12 @@ function Header() {
                 </Nav>
                 <Nav className="d-flex items-center space-x-4">
                     {email ? (
-                        <div >
-                            <div className="text-gray-500 pb-2">{email}</div>
+                        <Nav className="ml-auto">
+                            <Nav.Link href='/profile' className="text-gray-500 pb-2">Profile</Nav.Link>
                             <Button variant="outline-info" onClick={(e) => logout(e)}>
                                 Logout
                             </Button>
-                        </div>
+                        </Nav>
                     ) : (
                         <Button variant="outline-info" onClick={(e) => handleShow(e)}>
                             Login

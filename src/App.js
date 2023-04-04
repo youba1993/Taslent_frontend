@@ -11,7 +11,7 @@ import LinksPage from "./pages/LinksPage";
 import NewsAndEvents from "./pages/NewsAndEvents";
 import QandA from "./pages/QandA";
 import Contact from "./pages/Contact";
-
+import UserProfile from "./pages/UserProfile";
 
 function App() {
 
@@ -27,6 +27,7 @@ function App() {
         <Route exact path="/news&events" element={<NewsAndEvents />} />
         <Route exact path="/qa" element={<QandA />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/profile" element={<UserProfile />}/>
         <Route exact path="/underConstruction" element={<UnderConstruction />} />
       </Routes>
       <ButtonBackToTop />

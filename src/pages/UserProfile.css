@@ -1,0 +1,43 @@
+.profile-picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  
+  hr {
+    margin: 2rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 767px) {
+    .profile-picture {
+      max-width: 200px;
+    }
+  
+    .card {
+      margin-bottom: 2rem;
+    }
+  }
+  
