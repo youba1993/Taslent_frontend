@@ -8,14 +8,26 @@ import {
 import React, { useState } from "react";
 import logo from "../images/logo-no-background.png"
 import Login from '../pages/Login';
+import { useDispatch, useSelector } from 'react-redux';
+import { logoutUser } from '../features/user/userSlice';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
     const [show, setShow] = useState(false);
-    
+    const { email } = useSelector((state) => state.user);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
     const handleClose = () => setShow(false);
     const handleShow = (event) => {
         event.preventDefault();
         setShow(true);
+    }
+
+    const logout = async (e) => {
+        e.preventDefault()
+        dispatch(logoutUser())
+        navigate("/")
     }
 
     return (
@@ -42,11 +54,22 @@ function Header() {
                         <img className="d-inline-block align-top" height={60} alt="My Village Logo" src={logo} />
                     </Navbar.Brand>
                 </Nav>
-                <Nav>
-                    <Button variant="outline-info" onClick={(e)=>handleShow(e)}>
-                        Login
-                    </Button>
+                <Nav className="d-flex items-center space-x-4">
+                    {email ? (
+                        <Nav className="ml-auto">
+                            <Nav.Link href='/profile' className="text-gray-500 pb-2">Profile</Nav.Link>
+                            <Button variant="outline-info" onClick={(e) => logout(e)}>
+                                Logout
+                            </Button>
+                        </Nav>
+                    ) : (
+                        <Button variant="outline-info" onClick={(e) => handleShow(e)}>
+                            Login
+                        </Button>
+                    )}
                 </Nav>
+
+
 
             </Container>
             <Login show={show} handleClose={handleClose} />
