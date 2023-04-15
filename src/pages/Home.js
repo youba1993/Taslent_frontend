@@ -86,11 +86,11 @@ const Home = () => {
                     Our mission is to:
                 </p>
                 <ul>
-                    <li>Promote a sense of belonging and togetherness among community members</li>
-                    <li>Foster an environment of respect, empathy, and understanding</li>
-                    <li>Encourage collaboration and cooperation towards shared goals</li>
-                    <li>Celebrate diversity and promote cultural exchange</li>
-                    <li>Support the well-being and development of all community members</li>
+                    <li>Promote a sense of belonging and togetherness among community members.</li>
+                    <li>Foster an environment of respect, empathy, and understanding.</li>
+                    <li>Encourage collaboration and cooperation towards shared goals.</li>
+                    <li>Celebrate diversity and promote cultural exchange.</li>
+                    <li>Support the well-being and development of all community members.</li>
                 </ul>
                 <p>We believe that by working together, we can create a better future for ourselves and future generations.</p>
             </Container>
