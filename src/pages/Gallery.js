@@ -16,7 +16,13 @@ const Gallery = () => {
         setActiveCategory(category);
     };
 
-
+    const filteredGalleryItems = galleryItems.filter((item) => {
+      if (activeCategory === 'all') {
+        return true;
+      } else {
+        return item.category === activeCategory.toLowerCase();
+      }
+    });
 
     // const handleImageUpload = (event) => {
     //     const file = event.target.files[0];
@@ -95,18 +101,14 @@ const Gallery = () => {
             </div>
           </div>
           <div className="d-flex row row-cols-1 row-cols-md-3 g-4 align-self-stretch">
-            {galleryItems
-              .filter((item) => {
-                if (activeCategory === "all") {
-                  return true;
-                } else {
-                  return item.category === activeCategory.toLowerCase();
-                }
-              })
-              .map((item) => (
-                <GalleryItem key={item.id} item={item} />
-              ))}
-      
+          {filteredGalleryItems.length > 0 ? (
+            filteredGalleryItems.map((item) => (
+              <GalleryItem key={item.id} item={item} />
+            ))
+          ) : (
+            <p>No data to display for selected category</p>
+          )}
+              
             {/* {userImages.map((image, index) => (
               <GalleryItem key={index} item={image} />
             ))} */}
