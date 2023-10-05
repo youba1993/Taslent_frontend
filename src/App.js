@@ -1,5 +1,8 @@
+import { Route, Routes, Link, useLocation } from "react-router-dom";
+import { useSpring, animated } from 'react-spring';
+import { Button } from "react-bootstrap";
+
 import Home from "./pages/Home";
-import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,9 +15,7 @@ import NewsAndEvents from "./pages/NewsAndEvents";
 import QandA from "./pages/QandA";
 import Contact from "./pages/Contact";
 import UserProfile from "./pages/UserProfile";
-import { useSpring, animated } from 'react-spring';
-import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+
 
 function App() {
   // Define animations for hero section
@@ -24,6 +25,7 @@ function App() {
     from: { opacity: 0, transform: 'translateY(-50px)' },
     delay: 500
   });
+  const { pathname } = useLocation();
   const handleScroll = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -32,7 +34,7 @@ function App() {
   };
   return (
     <div >
-      <animated.div className="background-image text-center text-white scroll-bg pb-2" style={heroAnimation}>
+      {pathname === "/" && <animated.div className="background-image text-center text-white scroll-bg pb-2" style={heroAnimation}>
         <div className="background-image text-center text-white scroll-bg pb-5">
           <h1 className=" p-2 size-lg" style={{ fontSize: "65px" }}>Ansuf Yiswen</h1>
           <h3>Taslent</h3>
@@ -42,7 +44,7 @@ function App() {
             <Link to={"https://buy.stripe.com/test_6oEdS17frfOagw0000"} ><Button size="lg" className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
           </div>
         </div>
-      </animated.div>
+      </animated.div>}
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
