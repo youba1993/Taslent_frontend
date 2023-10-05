@@ -25,9 +25,8 @@ function App() {
     delay: 500
   });
   const handleScroll = () => {
-    const headerHeight = 5;
     window.scrollTo({
-      top: window.innerHeight - headerHeight,
+      top: window.innerHeight,
       behavior: 'smooth',
     });
   };
@@ -39,7 +38,7 @@ function App() {
           <h3>Taslent</h3>
           <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
           <div className="d-flex justify-content-center">
-            <Button onClick={() => handleScroll()} size="lg" className="me-2" variant="outline-light" >Learn more</Button>
+            <Link to={"/about"}> <Button onClick={() => handleScroll()} size="lg" className="me-2" variant="outline-light" >Learn more</Button> </Link>
             <Link to={"https://buy.stripe.com/test_6oEdS17frfOagw0000"} ><Button size="lg" className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
           </div>
         </div>
