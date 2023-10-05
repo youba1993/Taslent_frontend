@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
 import ProjectCom from "../components/ProjectCom";
 import { projects } from "../data/projectsData";
 import { taslentUrl } from "../images/ImageUrl";
@@ -9,13 +8,6 @@ import { useSpring, animated } from 'react-spring';
 
 const Home = () => {
     const { unite, respect, knowledge } = taslentUrl.homePage;
-    // Define animations for hero section
-    const heroAnimation = useSpring({
-        opacity: 1,
-        transform: 'translateY(0px)',
-        from: { opacity: 0, transform: 'translateY(-50px)' },
-        delay: 500
-    });
 
     // Define animations for features section
     const featuresAnimation = useSpring({
@@ -27,19 +19,7 @@ const Home = () => {
 
     return (
         <div>
-            {/* Hero Section */}
-            <animated.div className="background-image text-center text-white scroll-bg pb-2" style={heroAnimation}>
-                <div className="background-image text-center text-white scroll-bg pb-5">
-                    <h1 className=" p-2 size-lg" style={{ fontSize: "65px" }}>Ansuf Yiswen</h1>
-                    <h3>Taslent</h3>
-                    <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
-                    <div className="d-flex justify-content-center">
-                        <Link to={"/about"}><Button size="lg" className="me-2" variant="outline-light" >Learn more</Button></Link>
-                        <Link to={"https://buy.stripe.com/test_6oEdS17frfOagw0000"} ><Button size="lg" className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
-                    </div>
-                </div>
-            </animated.div>
-
+           
             {/* Values Section */}
             <Container className="my-5">
                 <animated.h2 className="text-center mb-5" style={featuresAnimation}>Our Values</animated.h2>

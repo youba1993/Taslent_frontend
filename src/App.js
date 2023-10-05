@@ -12,11 +12,38 @@ import NewsAndEvents from "./pages/NewsAndEvents";
 import QandA from "./pages/QandA";
 import Contact from "./pages/Contact";
 import UserProfile from "./pages/UserProfile";
+import { useSpring, animated } from 'react-spring';
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function App() {
-
+  // Define animations for hero section
+  const heroAnimation = useSpring({
+    opacity: 1,
+    transform: 'translateY(0px)',
+    from: { opacity: 0, transform: 'translateY(-50px)' },
+    delay: 500
+  });
+  const handleScroll = () => {
+    const headerHeight = 5;
+    window.scrollTo({
+      top: window.innerHeight - headerHeight,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div >
+      <animated.div className="background-image text-center text-white scroll-bg pb-2" style={heroAnimation}>
+        <div className="background-image text-center text-white scroll-bg pb-5">
+          <h1 className=" p-2 size-lg" style={{ fontSize: "65px" }}>Ansuf Yiswen</h1>
+          <h3>Taslent</h3>
+          <p> is a village in Algeria in the commune of Ighram (Kabylie), located in the Soummam valley ...</p>
+          <div className="d-flex justify-content-center">
+            <Button onClick={() => handleScroll()} size="lg" className="me-2" variant="outline-light" >Learn more</Button>
+            <Link to={"https://buy.stripe.com/test_6oEdS17frfOagw0000"} ><Button size="lg" className="me-2" variant="outline-info" style={{ fontWeight: "bold" }} >Donate</Button></Link>
+          </div>
+        </div>
+      </animated.div>
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -27,7 +54,7 @@ function App() {
         <Route exact path="/news&events" element={<NewsAndEvents />} />
         <Route exact path="/qa" element={<QandA />} />
         <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/profile" element={<UserProfile />}/>
+        <Route exact path="/profile" element={<UserProfile />} />
         <Route exact path="/underConstruction" element={<UnderConstruction />} />
       </Routes>
       <ButtonBackToTop />
